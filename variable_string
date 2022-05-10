@@ -1,0 +1,8 @@
+#include variable into the string by adding f in front of that. 
+
+day_name = 'Tuesday'
+day = 10
+month = 'May'
+temp = 25
+
+print(f"Today is {day_name} {month} {day} and it\'s {temp} outside.")
