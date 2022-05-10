@@ -1,6 +1,15 @@
+#1
 light_is_on = False
 
 if light_is_on:
   print("The light is on!")
 else:
   print("The light is off!")
+  
+#2
+age = 20
+
+if age >= 18:
+  print("Adult")
+else:
+  print("Child")
