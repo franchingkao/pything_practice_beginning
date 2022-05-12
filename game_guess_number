@@ -1,11 +1,15 @@
 import random
-guess = input("Enter your guess(first try): ")
+print("It\'s a guessing game. Please guess a number between 1 and 100.\n")
+guess = int(input("It\'s your first try: "))
 
-correct_answer = random.randint(1,10)
+correct_answer = random.randint(1,100)
 guess_count = 1
 
 while guess != correct_answer:
   guess_count += 1
-  guess = int(input(f"It\'s your {guess_count} tries: "))
+  if guess > correct_answer:
+    guess = int(input(f"Too high! It\'ve been {guess_count} tries': "))
+  else:
+    guess = int(input(f"Too low! It\'ve been {guess_count} tries': "))
 
 print(f"Congrats! The answer was {correct_answer} and it took you {guess_count} times to get there!")
