@@ -1,0 +1,25 @@
+#triple quotes can make the paragraph
+text = """
+Ornithoptera alexandrae
+
+Some facts about this giant butterfly:
+
+Average length: 8 cm.
+Wingspan: Up to 31 cm for females and 20 cm for males.
+Weight: Up to 12 grams.
+Life span: About three months.
+Feeding: Larvae feed on pipe-vines and adults on flowers.
+Protection status: Endangered (IUCN 3.1)
+Range: About 100 square kilometres of coastal rainforest near Popondetta, Oro Province, Papua New Guinea.
+
+Ornithoptera alexandrae is the largest butterfly in the world. It was described in 1907 by the British entomologist Lord Walter Rothschild who also founded of the Zoological Museum, Tring (now the Natural History Museum at Tring). The female lays about 27 eggs during its entire lifespan. The caterpillars eat the pipe-vine plant, which contains poison, making the butterfly toxic to predators. Males are strongly territorial and will chase potential rivals, and sometimes small birds as well. It is named in honour of Queen Alexandra, wife of King Edward VII of the United Kingdom.
+"""
+word_count = {}
+
+for word in text.split():
+  if word in word_count: 
+    word_count[word] += 1
+  else: 
+    word_count[word] = 1
+  
+print(word_count)
