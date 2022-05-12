@@ -1,0 +1,14 @@
+def hello(name):
+  print(f"Hello {name}!")
+
+hello("Tim")
+
+def add_num(x,y):
+  print(x + y)
+  
+add_num(1,2)
+
+def dog_info(age, name):
+  print(f"{name} the dog is {age} years old.")
+
+dog_info(10, "GG")
