@@ -1,0 +1,6 @@
+def hello():
+  print("Hello Nick!")
+
+#add for loop so you cna use it for several times you want
+for x in range(3):
+  hello()
