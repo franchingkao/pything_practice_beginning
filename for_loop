@@ -1,0 +1,15 @@
+fav_movies = ["a", "b", "c"]
+
+#use range(x) as times in 'for' loop
+for num in range(10):
+  print("It will be printed ten times.")
+
+#use list as times in'for' loop
+for movie in fav_movies:
+  print(movie)
+
+#print 40 times with 2,4,6,8...
+num = 2
+for r in range(40):
+  print(num)
+  num += 2
