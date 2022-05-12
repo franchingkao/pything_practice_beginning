@@ -1,0 +1,20 @@
+import random
+
+#generate a lucky number
+lucky_number = random.randint(1,100)
+
+#generate a reference number for text
+fortune_number = random.randint(1,3)
+#generate a void text and later will be changed by 'if statement' below 
+fortune_text = ""
+
+#change the content of fortune_text based on the fortune number generated above
+if fortune_number == 1:
+  fortune_text = "Nice Day!"
+if fortune_number == 2:
+  fortune_text = "Bad QQ"
+if fortune_number == 3:
+  fortune_text = "Super lucky day!"
+
+#finally print the text & lucky number
+print(f"{fortune_text} Your lucky number is {lucky_number}!")
