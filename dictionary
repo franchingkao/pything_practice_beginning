@@ -1,0 +1,12 @@
+cats = {"Jan":6, "Tom":5}
+
+#print a cat's info in dictionary
+#print(dic_name["key_name"])
+print(cats["Jan"])
+
+#add a cat's info into the dictionary 'cats.' It will be added in the last.
+cats["Tim"] = 8
+
+#practice for key& bool
+ints = {1:True, 2:False, 3:False}
+print(ints[3])
