@@ -1,0 +1,18 @@
+#triple quotes can make the paragraph
+text = """The free species directory that anyone can edit.
+
+It covers Animalia, Plantae, Fungi, Bacteria, Archaea, Protista and all other forms of life.
+
+So far we have 802,961 articles
+
+Wikispecies is free, because life is in the public domain!
+
+You can also check us out on Twitter: @Wikispecies
+or use the Android app sponsored by Wikimedia.
+"""
+
+print(text)
+
+#print the length of the article by using split to find the number of characters.
+length = len(text.split())
+print(f"The len of the article is {length}.\n")
