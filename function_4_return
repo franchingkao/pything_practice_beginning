@@ -1,0 +1,5 @@
+def cap(string):
+  return string.upper()
+
+new_string = cap("New string")
+print(new_string)
