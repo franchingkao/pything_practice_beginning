@@ -1,0 +1,11 @@
+fav_movies = ["a", "b", "c"]
+
+###add a new value to the last###
+#fav_movies.append("d")
+###insert a new value to the specific position###
+#fav_movies.insert(1,"a-2")
+###remove a value from the specific position###
+#del(fav_movies[2])
+
+del(fav_movies[:2])
+print(fav_movies)
