@@ -1,0 +1,11 @@
+import random
+guess = input("Enter your guess(first try): ")
+
+correct_answer = random.randint(1,10)
+guess_count = 1
+
+while guess != correct_answer:
+  guess_count += 1
+  guess = int(input(f"It\'s your {guess_count} tries: "))
+
+print(f"Congrats! The answer was {correct_answer} and it took you {guess_count} times to get there!")
