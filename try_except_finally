@@ -1,0 +1,12 @@
+try:
+  answer = input("by: ")
+  num = int(answer)
+  print(10/num)
+
+#I have no idea why "as e" is needed?
+except ZeroDivisionError as e: 
+  print("divide by zero!")
+except ValueError as e:
+  print("invalid!")
+finally:
+  print("This code always runs.")
