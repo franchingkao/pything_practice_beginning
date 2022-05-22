@@ -1,0 +1,13 @@
+answer = input("Enter string to test for palindrome or \'exist\': ")
+
+while answer != "exist":
+  
+  if answer[0] == answer[-1]:
+    a = True
+  else:
+    a = False
+  result = f"Palindrome test: {a}"
+  print(result) 
+  answer = input("Enter string to test for palindrome or \'exist\': ")
+
+#perfect solution... : https://www.linkedin.com/learning/learning-python-14393370/solution-palindromes?autoplay=true&resume=false&u=2110716
