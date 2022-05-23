@@ -1,0 +1,26 @@
+import os
+from os import path
+import shutil
+from shutil import make_archive
+from zipfile import ZipFile
+
+ #make a duplicate of an existing file
+if path.exists("filename.txt"):
+  #get the path to the file in the current directory
+  src = path.realpath("filename.txt")
+
+  #make a backup copy by apending "bak" to the NameError
+  dst = src + ".bak"
+  shutil.copy(src, dst)
+
+  #rename
+  os.rename("oldfilename.txt", "newfilename.txt")
+
+  #put things into a zip archive
+  root_dir, tail = path.split(src)
+  shutil.make_archive("archive", "zip", root_dir)
+
+  #ZIP file
+  with ZipFile("testzip.zip","w") as newzip:
+    newzip.write("filename.txt")
+    newzip.write("filename2.txt")
