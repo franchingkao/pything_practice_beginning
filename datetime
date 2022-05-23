@@ -1,0 +1,26 @@
+import os
+from os import path
+import datetime
+from datetime import date, time, timedelta
+import time
+
+#print the name of the OS
+print(os.name)
+
+#check for item existence and type
+print("item exists:", str(path.exists("filename.txt")))
+print("item is a file:", path.isfile("filename.txt"))
+print("item is a directory:", path.isdir("filename.txt"))
+
+#file path
+path.realpath("filename.txt") #path including file name
+path.split(path.realpath("filename.txt")) #sperately
+
+#get the modification time
+t = time.ctime(path.getmtimee("filename.txt"))
+print(t)
+print(datetime.datetime.fromtimestamp(path.getmtimee("filename.txt"))) #more readable
+
+#calculate how long ago the item was modified
+td = datetime.datetime.now() - datetime.datetime.fromtimestamp(path.getmtimee("filename.txt"))
+print(td)
