@@ -1,0 +1,25 @@
+  # open a file for writing and create it if it doesn't exist
+  myfile = open("textfile.txt", "W+")
+
+  # open the file for appending text to the end
+  myfile = open("textfile.txt", "a+")
+
+  #read
+  myfile = open("textfile.txt", "r")
+  if myfile.mode == "r":
+    
+    #first solution
+    contents = myfile.read()
+    print(contents)
+
+    #second solution
+    fl = myfile.readlines
+    for x in fl:
+      print(x)
+  
+  # write some lines of data to the file
+  for i in range(10):
+    myfile.write("Write something.\n")
+
+  # close the file
+  myfile.close()
